@@ -1,4 +1,36 @@
 /* Global Style */
- body{
+*{
     font-family: 'Open Sans Condensed', sans-serif;
- }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Heading */
+header{
+   line-height: 75px;
+   padding: 30px;
+   background-color: #363A3F;
+   color: #E4DCCF;
+   height: 150px
+}
+#heading{
+   font-size: 2rem;
+   text-transform: capitalize;
+   float: left;
+   letter-spacing: 4px;
+}
+
+#rules{
+   font-size: 1.5rem;
+   float: right;
+   
+}
+#rules a{
+   text-decoration: none;
+   color: #E4DCCF;
+   font-weight: bold;
+}
+#rules a:hover{
+   text-decoration: underline;
+}
