@@ -10,9 +10,9 @@
 header{
    line-height: 75px;
    padding: 30px;
-   background-color: #363A3F;
-   color: #E4DCCF;
-   height: 150px
+   background-color: #E4DCCF;
+   color: #363A3F;
+   height: 150px;
 }
 #heading{
    font-size: 2rem;
@@ -28,9 +28,54 @@ header{
 }
 #rules a{
    text-decoration: none;
-   color: #E4DCCF;
+   color: #363A3F;
    font-weight: bold;
 }
 #rules a:hover{
    text-decoration: underline;
+}
+/* Body and scores*/
+body{
+   background-color: #363A3F;
+   color: #E4DCCF;
+   font-size: 30px;
+   font-weight: bold;
+}
+ .score-area{
+    text-align: center;
+    padding: 40px 100px;
+    width: 350px;
+    border: solid 2px #363A3F;
+    border-radius: 10px;
+    background-color: #516575;
+ }
+ #score{
+    border-bottom: solid 2px #363A3F;
+ }
+
+ /* Style for game area */
+
+ .text{
+    padding-left: 30px;
+    bottom: 300px;
+    position: absolute;
+ }
+ .choices{
+   text-align: center;
+   font-size: 60px;
+   margin-top: 80px;
+   position: absolute;
+   bottom: 0;
+   padding:0 20%;
+ }
+.btn{
+   display: inline-block;
+   border: 3px solid white;
+   border-radius: 50%;
+   padding: 50px;
+   margin: 0 10px;
+}
+.btn:hover{
+   background-color: #E4DCCF;
+   color: #363A3F;
 }
