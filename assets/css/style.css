@@ -52,28 +52,45 @@ body{
     border-radius: 10px;
     background-color: #3D5361;
  }
- #score{
+#score{
     border-bottom: solid 2px #363A3F;
- }
+}
 
  /* Style for game area */
 
- .players{
+.players{
    text-align: center;
-   word-spacing: 400px;
- }
+   word-spacing: 200px;
+}
+#player-computer{
+   word-spacing: 450px;
+}
+.image{
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+   height: 350px; 
+}
 
- .choices{
+.pic{
+   width: 350px;
+   height: 350px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+   background-color: #2d3135;
+}
+
+.choices{
    text-align: center;
    font-size: 40px;
    margin-top: 80px;
    word-spacing: 70px;
- }
+}
 .btn{
    display: inline-block;
    border: 3px solid white;
    border-radius: 50%;
    padding: 20px;
+   cursor: pointer;
 }
 .btn:hover{
    background-color: #E4DCCF;
