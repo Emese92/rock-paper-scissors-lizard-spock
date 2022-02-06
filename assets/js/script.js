@@ -1,89 +1,117 @@
-//Creating consts
-const score = 0;
-const rounds = 0;
+//Creating variables
+let score = 0;
+let rounds = 0;
 const scoreSpan = document.getElementById("score-number");
 const roundsSpan = document.getElementById("round-number");
-const scoreArea = document.querySelector(".score-area");
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const lizard = document.getElementById("lizard");
 const spock = document.getElementById("spock");
+var computerImage = document.querySelector("#computer-image");
+var playerImage = document.querySelector("#player-image");
+
 
 //Computer choice
 function getComputerChoice() {
   const choices = ["rock", "paper", "scissors", "lizard", "spock"];
   const randomNumber = Math.floor(Math.random() * 5);
   return choices[randomNumber];
+ 
+}
+
+//Counter and pop up windows
+
+function draw() {
+  rounds++;
+  roundsSpan.innerHTML = rounds;
+  alert("Its a draw! Try again!");
+}
+
+function win() {
+  score++;
+  scoreSpan.innerHTML = score;
+  rounds++;
+  roundsSpan.innerHTML = rounds;
+  alert("Congratulations, you won!");
+}
+
+function lose() {
+  rounds++;
+  roundsSpan.innerHTML = rounds;
+  alert("Better luck next time!");
 }
 
 //Player choice
+
 function game(playerChoice) {
   const computerChoice = getComputerChoice();
 
   if (playerChoice === computerChoice) {
-    console.log("Its a draw");
+    draw();
   } else if (computerChoice === "rock") {
     if (playerChoice === "paper") {
-      console.log("You win");
+      win();
     } else {
-      console.log("The computer wins!");
+      lose();
     }
   } else if (computerChoice === "rock") {
-    if (playerChoice ==="spock") {
-      console.log("You win");
+    if (playerChoice === "spock") {
+      win();
     } else {
-      console.log("The computer wins!");
+      lose();
     }
   } else if (computerChoice === "paper") {
     if (playerChoice === "lizard") {
-      console.log("You win");
+      win();
     } else {
-      console.log("The computer wins!");
+      lose();
     }
   } else if (computerChoice === "paper") {
     if (playerChoice === "scissors") {
-      console.log("You win");
+      win();
     } else {
-      console.log("The computer wins!");
+      lose();
     }
   } else if (computerChoice === "scissors") {
     if (playerChoice === "spock") {
-      console.log("You win");
+      win();
     } else {
-      console.log("The computer wins!");
+      lose();
     }
   } else if (computerChoice === "scissors") {
     if (playerChoice === "rock") {
-      console.log("You win");
+      win();
     } else {
-      console.log("The computer wins!");
+      lose();
     }
   } else if (computerChoice === "lizard") {
     if (playerChoice === "scissors") {
-      console.log("You win");
+      win();
     } else {
-      console.log("The computer wins!");
+      lose();
     }
   } else if (computerChoice === "lizard") {
     if (playerChoice === "rock") {
-      console.log("You win");
+      win();
     } else {
-      console.log("The computer wins!");
+      lose();
     }
   } else if (computerChoice === "spock") {
     if (playerChoice === "paper") {
-      console.log("You win");
+      win();
     } else {
-      console.log("The computer wins!");
+      lose();
     }
   } else if (computerChoice === "spock") {
     if (playerChoice === "lizard") {
-      console.log("You win");
+      win();
     } else {
-      console.log("The computer wins!");
+        lose();
     }
-}
+  }
+  playerImage.src = `./assets/images/${playerChoice}.jpg`;
+  computerImage.src = `./assets/images/${computerChoice}.jpg`;
 }
 
 function buttons() {
@@ -101,7 +129,10 @@ function buttons() {
   })
   spock.addEventListener('click', function() {
     game("spock");
+    
   })
+
 }
+
 
 buttons();
