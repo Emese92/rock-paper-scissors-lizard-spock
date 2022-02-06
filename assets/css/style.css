@@ -109,3 +109,11 @@ body{
    text-align: center;
    margin-top: 20px;
 }
+.rule-text{
+   text-align: center;
+   font-size: 2rem;
+   color:white;
+   margin-top: 50px;
+   line-height: 80px;
+   
+}
