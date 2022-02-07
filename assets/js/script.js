@@ -41,7 +41,7 @@ function win() {
 function lose() {
   rounds++;
   roundsSpan.innerHTML = rounds;
-  message.textContent = "You lost! Better luck next time!"
+  message.textContent = "You lost! Better luck next time!";
 }
 
 //Player choice
@@ -89,20 +89,20 @@ function game(playerChoice) {
 function buttons() {
   rock.addEventListener('click', function() {
     game("rock");
-  })
+  });
   paper.addEventListener('click', function() {
     game("paper");
-  })
+  });
   scissors.addEventListener('click', function() {
     game("scissors");
-  })
+  });
   lizard.addEventListener('click', function() {
     game("lizard");
-  })
+  });
   spock.addEventListener('click', function() {
     game("spock");
     
-  })
+  });
 
 }
 
