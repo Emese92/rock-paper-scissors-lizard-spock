@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rock,Paper,Scissors,Lizard,Spock Game" />
+    <meta name="keywords" content="game, rock paper scissors, rock paper scissors lizard spock, big bang theory" />
     <!-- font awesome and google fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,51 +14,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock-Paper-Scissors-Lizard-Spock-Game</title>
-</head>
-<body>
+  </head>
+
+  <body>
 
     <header>
-        <div id="heading"><h1 >Rock Paper Scissors Lizard Spock Game</h1></div>
-        <div id="rules"><a href="./rules.html" target="_blank">Rules</a></div>
+      <div id="heading">
+        <h1>Rock Paper Scissors Lizard Spock Game</h1>
+      </div>
+      <div id="rules"><a href="./rules.html" target="_blank">Rules</a></div>
     </header>
-    
+
     <div class="score-area">
-        <p id="score">Score : <span id="score-number"> 0</span></p>
-        <p id="rounds">Rounds : <span id="round-number"> 0</span></p>
+      <p id="score">Score : <span id="score-number"> 0</span></p>
+      <p id="rounds">Rounds : <span id="round-number"> 0</span></p>
     </div>
- 
+
+    <div class="text">
+      <p id="message">Choose your weapon!</p>
+    </div>
+
     <div class="game-area">
-        <div class="players">
-           <div id="player-computer"><p>Player Computer</p></div>
-            <div class="image">
-                <img class="pic" id="player-image" src="./assets/images/back.jpg" alt="">
-            </div>
-            <div class="image">
-                <img class="pic" id="computer-image" src="./assets/images/back.jpg" alt="">
-            </div>
+      <div class="players">
+        <div class="image">
+          <img class="pic" id="player-image" src="./assets/images/back.jpg" alt="Picture related to your choice">
         </div>
-        <div class="choices">
-            <div class="btn" id="rock">
-                <i class="fas fa-hand-rock"></i>
-            </div>
-            <div class="btn" id="paper">
-                <i class="fas fa-hand-paper"></i>
-            </div>
-            <div class="btn" id="scissors">
-                <i class="fas fa-hand-scissors"></i>
-            </div>
-            <div class="btn" id="lizard">
-                <i class="fas fa-hand-lizard"></i>
-            </div>
-            <div class="btn" id="spock">
-                <i class="fas fa-hand-spock"></i>
-            </div>
+        <div class="image">
+          <img class="pic" id="computer-image" src="./assets/images/back.jpg" alt="Picture related to the computer choice">
         </div>
-        <div id="label"><p>Rock Paper Scissors Lizard Spock</p></div>
-        <div class="text"><p>Choose your weapon!</p></div>
+        <div id="player-computer">
+          <p>Player Computer</p>
+        </div>
+      </div>
+
+      <div class="choices">
+        <div class="btn" id="rock">
+          <i class="fas fa-hand-rock"></i>
+        </div>
+        <div class="btn" id="paper">
+          <i class="fas fa-hand-paper"></i>
+        </div>
+        <div class="btn" id="scissors">
+          <i class="fas fa-hand-scissors"></i>
+        </div>
+        <div class="btn" id="lizard">
+          <i class="fas fa-hand-lizard"></i>
+        </div>
+        <div class="btn" id="spock">
+          <i class="fas fa-hand-spock"></i>
+        </div>
+      </div>
+
+      <div id="label">
+        <p>Rock Paper Scissors Lizard Spock</p>
+      </div>
 
     </div>
 
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
+
 </html>

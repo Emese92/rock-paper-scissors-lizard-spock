@@ -8,8 +8,10 @@ const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const lizard = document.getElementById("lizard");
 const spock = document.getElementById("spock");
+const message = document.getElementById("message");
 var computerImage = document.querySelector("#computer-image");
 var playerImage = document.querySelector("#player-image");
+
 
 
 //Computer choice
@@ -20,12 +22,12 @@ function getComputerChoice() {
  
 }
 
-//Counter and pop up windows
+//Counters and result
 
 function draw() {
   rounds++;
   roundsSpan.innerHTML = rounds;
-  alert("Its a draw! Try again!");
+  message.textContent = "Its a draw! Try again!";
 }
 
 function win() {
@@ -33,13 +35,13 @@ function win() {
   scoreSpan.innerHTML = score;
   rounds++;
   roundsSpan.innerHTML = rounds;
-  alert("Congratulations, you won!");
+  message.textContent = "Congratulations, you won!";
 }
 
 function lose() {
   rounds++;
   roundsSpan.innerHTML = rounds;
-  alert("Better luck next time!");
+  message.textContent = "You lost! Better luck next time!"
 }
 
 //Player choice
