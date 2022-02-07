@@ -8,11 +8,11 @@
 
 /* Heading */
 header{
-   line-height: 75px;
-   padding: 30px;
-   background-color: #E4DCCF;
-   color: #363A3F;
-   height: 150px;
+   line-height: 45px;
+   padding: 15px;
+   background-color: #56423D;
+   color: #F2F7F2;
+   height: 95px;
 }
 #heading{
    font-size: 2rem;
@@ -24,36 +24,37 @@ header{
 #rules{
    font-size: 1.5rem;
    float: right;
-   border: solid 1px white;
-   background-color: white;
+   border: solid 1px #F2F7F2;
+   background-color: #F2F7F2;
    border-radius: 10px;
    padding: 0 10px;
 }
 #rules a{
    text-decoration: none;
-   color: #363A3F;
+   color: #1D1F20;
    font-weight: bold;
 }
 #rules a:hover{
-   text-decoration: underline;
+   text-decoration: underline #960803;
 }
 /* Body and scores*/
 body{
-   background-color: #363A3F;
-   color: #E4DCCF;
+   background-color: #1D1F20;
+   color: #BEA6A0;
    font-size: 30px;
    font-weight: bold;
 }
  .score-area{
+    color: #1D1F20;
     text-align: center;
     padding: 40px 100px;
     width: 350px;
-    border: solid 2px #363A3F;
+    border: solid 2px #BEA6A0;
     border-radius: 10px;
-    background-color: #3D5361;
+    background-color: #BEA6A0;
  }
 #score{
-    border-bottom: solid 2px #363A3F;
+    border-bottom: solid 2px #960803;
 }
 
  /* Style for game area */
@@ -64,6 +65,9 @@ body{
 }
 #player-computer{
    word-spacing: 450px;
+}
+#computer-image{
+   transform: scaleX(-1);
 }
 .image{
    display: inline-block;
@@ -77,7 +81,7 @@ body{
    height: 350px;
    overflow: hidden;
    border-radius: 50%;
-   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .choices{
@@ -88,20 +92,21 @@ body{
 }
 .btn{
    display: inline-block;
-   border: 3px solid white;
+   border: 3px solid #BEA6A0;
    border-radius: 50%;
    padding: 20px;
    cursor: pointer;
+   color:#960803;
 }
 .btn:hover{
-   background-color: #E4DCCF;
-   color: #363A3F;
+   background-color: #960803;
+   color: #1D1F20;
 }
 #label{
    text-align: center;
    word-spacing: 115px;
    font-size: 20px;
-   color:white;
+   color:#BEA6A0;
 }
 .text{
    padding-left: 30px;
@@ -112,7 +117,7 @@ body{
 .rule-text{
    text-align: center;
    font-size: 2rem;
-   color:white;
+   color:#BEA6A0;
    margin-top: 50px;
    line-height: 80px;
    

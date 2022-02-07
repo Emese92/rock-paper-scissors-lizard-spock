@@ -50,64 +50,34 @@ function game(playerChoice) {
   if (playerChoice === computerChoice) {
     draw();
   } else if (computerChoice === "rock") {
-    if (playerChoice === "paper") {
-      win();
-    } else {
-      lose();
-    }
-  } else if (computerChoice === "rock") {
-    if (playerChoice === "spock") {
+    if (playerChoice === "paper" || playerChoice === "spock") {
       win();
     } else {
       lose();
     }
   } else if (computerChoice === "paper") {
-    if (playerChoice === "lizard") {
-      win();
-    } else {
-      lose();
-    }
-  } else if (computerChoice === "paper") {
-    if (playerChoice === "scissors") {
+    if (playerChoice === "lizard" || playerChoice === "scissors") {
       win();
     } else {
       lose();
     }
   } else if (computerChoice === "scissors") {
-    if (playerChoice === "spock") {
-      win();
-    } else {
-      lose();
-    }
-  } else if (computerChoice === "scissors") {
-    if (playerChoice === "rock") {
+    if (playerChoice === "spock" || playerChoice === "rock") {
       win();
     } else {
       lose();
     }
   } else if (computerChoice === "lizard") {
-    if (playerChoice === "scissors") {
-      win();
-    } else {
-      lose();
-    }
-  } else if (computerChoice === "lizard") {
-    if (playerChoice === "rock") {
+    if (playerChoice === "scissors" || playerChoice === "rock") {
       win();
     } else {
       lose();
     }
   } else if (computerChoice === "spock") {
-    if (playerChoice === "paper") {
+    if (playerChoice === "paper" || playerChoice === "lizard") {
       win();
     } else {
       lose();
-    }
-  } else if (computerChoice === "spock") {
-    if (playerChoice === "lizard") {
-      win();
-    } else {
-        lose();
     }
   }
   playerImage.src = `./assets/images/${playerChoice}.jpg`;
