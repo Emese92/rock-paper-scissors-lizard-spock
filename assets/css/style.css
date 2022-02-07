@@ -13,9 +13,9 @@ header {
    background-color: #56423d;
    color: #f2f7f2;
    height: 95px;
+   font-size: 2rem;
 }
 #heading {
-   font-size: 2rem;
    text-transform: capitalize;
    float: left;
    letter-spacing: 4px;
@@ -121,8 +121,11 @@ body {
    text-align: center;
    font-size: 2rem;
    color: #bea6a0;
-   margin-top: 50px;
+   margin-top: 40px;
    line-height: 80px;
+}
+#rule-heading{
+   text-align: center;
 }
 
 /* Media queries */
