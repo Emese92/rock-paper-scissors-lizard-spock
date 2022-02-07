@@ -1,8 +1,10 @@
 # Rock-Paper-Scissors-Lizard-Spock game
+
+This game is based on the classic rock, paper, scissors game with an extension of choices for more possibilities and less likeliness of draws. This version appeared first in the TV series The Big Bang Theory. This can be played as a hand game, usually played between two people. This website is a single-player version where you can play against the computer.
+
+Live link: https://emese92.github.io/rock-paper-scissors-lizard-spock/
+
 (To open links in a new tab, hold 'Ctrl' (or '⌘' on Apple devices) as you click!)
-
-This game is based on the classic rock, paper, scissors game with an extention of chices for more possibilities and less likeliness of draws. This version appeared first in the TV serie The Big Bang Theory. This can be played as a hand game, usually played between two people
-
 
 ## User Experience (UX)
 
@@ -21,7 +23,7 @@ This game is based on the classic rock, paper, scissors game with an extention o
  * I planned my project with [Balsamiq](https://balsamiq.com/wireframes/desktop/#)
  
  ![Wireframe](/assets/images/wireframe.png)
- 
+
 #### Colour Scheme
  * The color palette was made with [Colormind](http://colormind.io/)
 ![Color Palette](/assets/images/color-palette.png)
@@ -29,9 +31,9 @@ This game is based on the classic rock, paper, scissors game with an extention o
  * [Google Fonts](https://fonts.google.com/): Open Sans Condensed was used throughout the website.
 #### Imagery
 The icons I used for the choices are from [Font Awesome](https://fontawesome.com/v5.15/icons/check-circle?style=solid).
-Instead of using the same icons, I have made a picture display circle for both the player and the computer choice, using more realistic photos releating to the options.
+Instead of using the same icons, I have made a picture display circle for both the player and the computer choice, using more realistic photos relating to the options.
 The photos used are from [Pexels](https://www.pexels.com/sv-se/), [Pixabay](https://pixabay.com/) and [Stockvault](https://www.stockvault.net/).
-On the rules page I used the same icons as the option buttons on the main page for a clearer explanation.
+On the rules page, I used the same icons as the option buttons on the main page for a clearer explanation.
 
 
 ## Features
@@ -57,7 +59,7 @@ On the rules page I used the same icons as the option buttons on the main page f
 
 
  ### Forking
- * If you wish fork the repository:
+ * If you wish to fork the repository:
     - GitHub Search my username and repository
     - Select the repository
     - Click the fork icon in the top right
@@ -72,7 +74,7 @@ On the rules page I used the same icons as the option buttons on the main page f
 - The photos used are from [Pexels](https://www.pexels.com/sv-se/), [Pixabay](https://pixabay.com/) and [Stockvault](https://www.stockvault.net/).
 - The website for responsiveness photo is from [Am I Responsive](http://ami.responsivedesign.is/#).
 - Box shadows were taken from [CSS Scan](https://getcssscan.com/css-box-shadow-examples).
-- Thank you for my mentor to reviewing and helping with design and code.
+- Thank you for my mentor in reviewing and helping with design and code.
 
 ## Technologies
  * [Webaim](https://webaim.org/resources/contrastchecker/?fcolor=BEA6A0&bcolor=960803)
@@ -91,5 +93,3 @@ On the rules page I used the same icons as the option buttons on the main page f
    - CSS3
    - HTML5
    - JavaScript
-
-   
