@@ -6,6 +6,8 @@ Live link: https://emese92.github.io/rock-paper-scissors-lizard-spock/
 
 (To open links in a new tab, hold 'Ctrl' (or '⌘' on Apple devices) as you click!)
 
+![Responsiveness](/assets/images/responsive.png)
+
 ## User Experience (UX)
 
 ## Visitor Goals
