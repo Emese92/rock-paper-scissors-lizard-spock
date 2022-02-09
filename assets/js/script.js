@@ -3,22 +3,42 @@ let score = 0;
 let rounds = 0;
 const scoreSpan = document.getElementById("score-number");
 const roundsSpan = document.getElementById("round-number");
-const rock = document.getElementById("rock");
-const paper = document.getElementById("paper");
-const scissors = document.getElementById("scissors");
-const lizard = document.getElementById("lizard");
-const spock = document.getElementById("spock");
 const message = document.getElementById("message");
 var computerImage = document.querySelector("#computer-image");
 var playerImage = document.querySelector("#player-image");
 
-
+const weapons = [
+  {
+      id: 'rock',
+      name: 'Rock',
+      winsOver: ['scissors', 'lizard']
+  },
+  {
+      id: 'paper',
+      name: 'Paper',
+      winsOver: ['scissors', 'lizard']
+  },
+  {
+      id: 'scissors',
+      name: 'Scissors',
+      winsOver: ['scissors', 'lizard']
+  },
+  {
+      id: 'lizard',
+      name: 'Lizard',
+      winsOver: ['scissors', 'lizard']
+  },
+  {
+      id: 'spock',
+      name: 'Spock',
+      winsOver: ['scissors', 'lizard']
+  }
+];
 
 //Computer choice
 function getComputerChoice() {
-  const choices = ["rock", "paper", "scissors", "lizard", "spock"];
   const randomNumber = Math.floor(Math.random() * 5);
-  return choices[randomNumber];
+  return weapons[randomNumber].id;
  
 }
 
@@ -46,65 +66,36 @@ function lose() {
 
 //Player choice
 
-function game(playerChoice) {
-  const computerChoice = getComputerChoice();
-
-  if (playerChoice === computerChoice) {
+function buttons(playerChoiceId) {
+  const computerChoiceId = getComputerChoice();
+  
+  const playerChoiceWinsOver = weapons.find(eachOption => eachOption.id === playerChoiceId).winsOver;
+  if (playerChoiceId === computerChoiceId) {
     draw();
-  } else if (computerChoice === "rock") {
-    if (playerChoice === "paper" || playerChoice === "spock") {
+  } else if (playerChoiceWinsOver.includes(computerChoiceId)) {
+      // Player wins
       win();
-    } else {
+  } else {
+      //Computer wins
       lose();
-    }
-  } else if (computerChoice === "paper") {
-    if (playerChoice === "lizard" || playerChoice === "scissors") {
-      win();
-    } else {
-      lose();
-    }
-  } else if (computerChoice === "scissors") {
-    if (playerChoice === "spock" || playerChoice === "rock") {
-      win();
-    } else {
-      lose();
-    }
-  } else if (computerChoice === "lizard") {
-    if (playerChoice === "scissors" || playerChoice === "rock") {
-      win();
-    } else {
-      lose();
-    }
-  } else if (computerChoice === "spock") {
-    if (playerChoice === "paper" || playerChoice === "lizard") {
-      win();
-    } else {
-      lose();
-    }
   }
+  
+  //Change this logic a bit to show icon instead
   playerImage.src = `./assets/images/${playerChoice}.jpg`;
   computerImage.src = `./assets/images/${computerChoice}.jpg`;
-}
+  }
+  
 
-function buttons() {
-  rock.addEventListener('click', function() {
-    game("rock");
-  });
-  paper.addEventListener('click', function() {
-    game("paper");
-  });
-  scissors.addEventListener('click', function() {
-    game("scissors");
-  });
-  lizard.addEventListener('click', function() {
-    game("lizard");
-  });
-  spock.addEventListener('click', function() {
-    game("spock");
-    
-  });
-
-}
+  function addClickListenersToOptions() {
+    weapons.forEach(eachOption => {
+        const id = eachOption.id;
+        document.getElementById(id).addEventListener('click', function() {
+            buttons(id);
+        });
+    });
+  }
+  
 
 
-buttons();
+addClickListenersToOptions();
+
