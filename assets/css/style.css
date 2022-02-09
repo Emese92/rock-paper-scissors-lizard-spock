@@ -222,6 +222,10 @@ body {
     padding: 40px;
   }
 
+  .players{
+    word-spacing: 10px;
+  }
+  
   #player-computer {
     word-spacing: 70px;
   }
