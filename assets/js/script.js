@@ -7,31 +7,30 @@ const message = document.getElementById("message");
 var computerImage = document.querySelector("#computer-image");
 var playerImage = document.querySelector("#player-image");
 
-const weapons = [
-  {
-      id: 'rock',
-      name: 'Rock',
-      winsOver: ['scissors', 'lizard']
+const weapons = [{
+    id: 'rock',
+    name: 'Rock',
+    winsOver: ['scissors', 'lizard']
   },
   {
-      id: 'paper',
-      name: 'Paper',
-      winsOver: ['scissors', 'lizard']
+    id: 'paper',
+    name: 'Paper',
+    winsOver: ['scissors', 'lizard']
   },
   {
-      id: 'scissors',
-      name: 'Scissors',
-      winsOver: ['scissors', 'lizard']
+    id: 'scissors',
+    name: 'Scissors',
+    winsOver: ['scissors', 'lizard']
   },
   {
-      id: 'lizard',
-      name: 'Lizard',
-      winsOver: ['scissors', 'lizard']
+    id: 'lizard',
+    name: 'Lizard',
+    winsOver: ['scissors', 'lizard']
   },
   {
-      id: 'spock',
-      name: 'Spock',
-      winsOver: ['scissors', 'lizard']
+    id: 'spock',
+    name: 'Spock',
+    winsOver: ['scissors', 'lizard']
   }
 ];
 
@@ -39,7 +38,7 @@ const weapons = [
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 5);
   return weapons[randomNumber].id;
- 
+
 }
 
 //Counters and result
@@ -68,34 +67,32 @@ function lose() {
 
 function buttons(playerChoiceId) {
   const computerChoiceId = getComputerChoice();
-  
+
   const playerChoiceWinsOver = weapons.find(eachOption => eachOption.id === playerChoiceId).winsOver;
   if (playerChoiceId === computerChoiceId) {
     draw();
   } else if (playerChoiceWinsOver.includes(computerChoiceId)) {
-      // Player wins
-      win();
+    // Player wins
+    win();
   } else {
-      //Computer wins
-      lose();
+    //Computer wins
+    lose();
   }
-  
-  //Change this logic a bit to show icon instead
-  playerImage.src = `./assets/images/${playerChoice}.jpg`;
-  computerImage.src = `./assets/images/${computerChoice}.jpg`;
-  }
-  
 
-  function addClickListenersToOptions() {
-    weapons.forEach(eachOption => {
-        const id = eachOption.id;
-        document.getElementById(id).addEventListener('click', function() {
-            buttons(id);
-        });
+  //Return pictures
+  playerImage.src = `./assets/images/${playerChoiceId}.jpg`;
+  computerImage.src = `./assets/images/${computerChoiceId}.jpg`;
+}
+
+
+function addClickListenersToOptions() {
+  weapons.forEach(eachOption => {
+    const id = eachOption.id;
+    document.getElementById(id).addEventListener('click', function() {
+      buttons(id);
     });
-  }
-  
+  });
+}
 
 
 addClickListenersToOptions();
-

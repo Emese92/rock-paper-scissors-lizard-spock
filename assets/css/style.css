@@ -4,46 +4,52 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-}
-
-/* Heading */
-header {
+ }
+ 
+ /* Heading */
+ header {
    line-height: 45px;
    padding: 15px;
    background-color: #56423d;
    color: #f2f7f2;
    height: 95px;
    font-size: 2rem;
-}
-#heading {
+ }
+ 
+ #heading {
    text-transform: capitalize;
    float: left;
    letter-spacing: 4px;
-}
-#rules {
+ }
+ 
+ #rules {
    font-size: 1.5rem;
    float: right;
    border: solid 1px #f2f7f2;
    background-color: #f2f7f2;
    border-radius: 10px;
    padding: 0 10px;
-}
-#rules a {
+ }
+ 
+ #rules a {
    text-decoration: none;
    color: #1d1f20;
    font-weight: bold;
-}
-#rules a:hover {
+ }
+ 
+ #rules a:hover {
    text-decoration: underline #960803;
-}
-/* Body and scores*/
-body {
+ }
+ 
+ /* Body and scores*/
+ body {
    background-color: #1d1f20;
    color: #bea6a0;
    font-size: 30px;
    font-weight: bold;
-}
-.score-area {
+ }
+ 
+ .score-area {
    color: #1d1f20;
    text-align: center;
    padding: 20px 100px;
@@ -52,49 +58,57 @@ body {
    border-radius: 10px;
    background-color: #bea6a0;
    font-size: 25px;
-}
-#score {
+ }
+ 
+ #score {
    border-bottom: solid 2px #960803;
-}
-.text {
+ }
+ 
+ .text {
    padding-left: 30px;
    font-size: 2.5rem;
    text-align: center;
    margin-top: 10px;
-}
-
-/* Style for game area */
-
-.players {
+ }
+ 
+ /* Style for game area */
+ 
+ .players {
    text-align: center;
    word-spacing: 200px;
-}
-#player-computer {
+ }
+ 
+ #player-computer {
    word-spacing: 450px;
-}
-#computer-image {
+ }
+ 
+ #computer-image {
    transform: scaleX(-1);
-}
-.image {
+ }
+ 
+ .image {
    display: inline-block;
    margin-left: auto;
    margin-right: auto;
    height: 350px;
-}
-.pic {
+ }
+ 
+ .pic {
    width: 350px;
    height: 350px;
    overflow: hidden;
    border-radius: 50%;
    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.choices {
+ }
+ 
+ .choices {
    text-align: center;
    font-size: 40px;
    margin-top: 80px;
    word-spacing: 70px;
-}
-.btn {
+ }
+ 
+ .btn {
    display: inline-block;
    border: 3px solid #bea6a0;
    border-radius: 50%;
@@ -102,53 +116,123 @@ body {
    cursor: pointer;
    color: #1d1f20;
    background-color: #bea6a0;
-}
-.btn:hover {
+ }
+ 
+ .btn:hover {
    background-color: #1d1f20;
    color: #bea6a0;
-}
-.btn > i{
+ }
+ 
+ .btn > i {
    height: 45px;
    width: 45px;
-}
-#label {
+ }
+ 
+ #label {
    text-align: center;
    word-spacing: 125px;
    font-size: 20px;
    color: #bea6a0;
-}
-.rule-text {
+ }
+ 
+ .rule-text {
    text-align: center;
    font-size: 2rem;
    color: #bea6a0;
    margin-top: 40px;
    line-height: 80px;
-}
-#rule-heading{
+ }
+ 
+ #rule-heading {
    text-align: center;
-}
-
-/* Media queries */
-/* For medium screen sizes 1055px and down */
-@media screen and (max-width: 1055px) {
+   padding-top: 10px;
+ }
+ 
+ /* Media queries */
+ 
+ /* For medium screen sizes 1055px and down */
+ @media screen and (max-width: 1055px) {
    header {
-       padding: 5px;
-       height: 70px;
+     padding: 5px;
+     height: 70px;
    }
+ 
    #heading {
-       font-size: 1.5rem;
+     font-size: 1.5rem;
    }
-}
-/* For medium screen sizes 925px and down */
-@media screen and (max-width: 925px) {
+ }
+ 
+ /* For medium screen sizes 925px and down */
+ @media screen and (max-width: 925px) {
    .players {
-       text-align: center;
-       word-spacing: 30px;
+     text-align: center;
+     word-spacing: 30px;
    }
+ 
    #player-computer {
-       word-spacing: 320px;
+     word-spacing: 320px;
    }
+ 
    #heading {
-       font-size: 1.2rem;
+     font-size: 1.2rem;
    }
-}
+ }
+ 
+ /* For medium screen sizes 925px and down */
+ @media screen and (max-width: 768px) {
+   header {
+     height: fit-content;
+   }
+ 
+   #heading {
+     font-size: 12px;
+     letter-spacing: normal;
+     float: none;
+     text-align: center;
+ 
+   }
+ 
+   #rules {
+     font-size: 20px;
+     float: none;
+     text-align: center;
+ 
+   }
+ 
+   .players {
+     display: none;
+   }
+ 
+   #player-computer {
+     display: none;
+   }
+ 
+   .score-area {
+     width: 100%;
+     font-size: 15px;
+   }
+ 
+   .text {
+     font-size: 25px;
+   }
+ 
+   .choices {
+     margin-top: 50px;
+     word-spacing: 30px;
+     margin-bottom: 10px;
+   }
+ 
+   #label {
+     display: none;
+   }
+ 
+   #rule-heading {
+     font-size: 40px;
+   }
+ 
+   .rule-text {
+     font-size: 30px;
+     line-height: 50px;
+   }
+ }
+ 
