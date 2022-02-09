@@ -8,69 +8,81 @@ Live link: https://emese92.github.io/rock-paper-scissors-lizard-spock/
 
 ## User Experience (UX)
 
-#### First Time Visitor Goals
+## Visitor Goals
+* Visitors have a clear and understandable layout.
+* The website features a clear message of how the game begins.
+* It has a rules page that makes it easy for the visitor to learn the game.
+* The outcome of the game is visible right after the visitor has clicked on an icon.
+* A scoreboard is also featured for the easy following of the game's current status.
 
 
-#### Returning Visitor Goals
+## Features
 
-#### Site owners Goals
+### Main page:
+It has a big and clear title of the game on top with a message, that makes the user understand in order to play press one of the buttons. There are two round pictures that show the hand gesture of the victory sign and it changes as the game begins to a related picture of the player and the computer choices.
+It has a scoreboard that shows the wins of the player and the rounds they have played.
 
+![Main](/assets/images/main-page.png)
 
+### Rules:
+It has the rules of the game detailed with logos for clear understanding. It opens up in a new tab.
+
+![Rules](/assets/images/rules-page.png)
 ### Design
 
 #### Balsamique
 
- * I planned my project with [Balsamiq](https://balsamiq.com/wireframes/desktop/#)
+I planned my project with [Balsamiq](https://balsamiq.com/wireframes/desktop/#)
  
- ![Wireframe](/assets/images/wireframe.png)
+![Wireframe](/assets/images/wireframe.png)
 
 #### Colour Scheme
 
- * The color palette was made with [Colormind](http://colormind.io/)
+The color palette was made with [Colormind](http://colormind.io/). I choose colors that are subtle and interesting for the visitor.
+It has a dark color background with high contrast buttons and scoreboard to catch the eyes.
+Contrast checks have been carried out with [Webaim](https://webaim.org/resources/contrastchecker/?fcolor=BEA6A0&bcolor=960803).
 
 ![Color Palette](/assets/images/color-palette.png)
 
 #### Typography
 
- * [Google Fonts](https://fonts.google.com/): Open Sans Condensed was used throughout the website.
+[Google Fonts](https://fonts.google.com/): Open Sans Condensed was used throughout the website.
  
 #### Imagery
 
 The icons I used for the choices are from [Font Awesome](https://fontawesome.com/v5.15/icons/check-circle?style=solid).
 Instead of using the same icons, I have made a picture display circle for both the player and the computer choice, using more realistic photos relating to the options.
-The photos used are from [Pexels](https://www.pexels.com/sv-se/), [Pixabay](https://pixabay.com/) and [Stockvault](https://www.stockvault.net/).
+The photos used are from [Pexels](https://www.pexels.com/sv-se/), [Pixabay](https://pixabay.com/) and [Stockvault](https://www.stockvault.net/). The photos are not available on small screen sizes.
 On the rules page, I used the same icons as the option buttons on the main page for a clearer explanation.
-
-
-## Features
 
 ## Testing
 
 ### JSHint
+There was no problem detected on [JSHint](https://jshint.com/)
 
-### Coverage
+![Index](/assets/images/jshint.png)
 
 ### Wave Test
-There was no problem detected on [Wave](https://wave.webaim.org/)
+No errors are reported on any of the pages [Wave](https://wave.webaim.org/)
 
 ![Index](/assets/images/wave.png) ![Rules](/assets/images/wave2.png) 
 
 ### Lighthouse Test
-I run lighthouse tests for desktop on both pages:
+I ran lighthouse tests for desktop on both pages:
 
 ![Index](/assets/images/lighthouse.png)
 
 ![Rules](/assets/images/lighthouse2.png)
 
 ### Validator testing
-* CSS: No errors were found when passing through the official Jigsaw  validator (warnings exist from fontawsome):
+CSS: No errors were found when passing through the official Jigsaw  validator (warnings exist from fontawsome):
 - [Index](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Femese92.github.io%2Frock-paper-scissors-lizard-spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 - [Rules](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Femese92.github.io%2Frock-paper-scissors-lizard-spock%2Frules.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 
 ![Index](/assets/images/jigsaw.png) 
 ![Warning](/assets/images/jigsaw2.png)
 
-* HTML: No errors were returned when passing through the official W3C validator:
+HTML: No errors were returned when passing through the official W3C validator:
 - [Index](https://validator.w3.org/nu/?doc=https%3A%2F%2Femese92.github.io%2Frock-paper-scissors-lizard-spock%2F)
 - [Rules](https://validator.w3.org/nu/?doc=https%3A%2F%2Femese92.github.io%2Frock-paper-scissors-lizard-spock%2Frules.html)
 
